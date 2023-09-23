@@ -166,7 +166,7 @@ void closeWindow(SDL_Window* window, SDL_Renderer* renderer, SDL_Event event, in
   //     }
   //   }
   // }
-  SDL_Delay(1000);
+  SDL_Delay(1500);
   SDL_DestroyRenderer(renderer);
   SDL_DestroyWindow(window);
   SDL_Quit();
