@@ -1,3 +1,8 @@
+/*Programacao Concorrente e Distribuida Projeto 1
+Carlos Guilherme Moraes
+Matheus Presotto Limonta
+Maycon Andre Mateus Santana
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/time.h>
