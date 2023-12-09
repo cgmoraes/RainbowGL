@@ -92,7 +92,7 @@ void swap(float **grid, float **newgrid, int noProcesses, int processId, int loc
       else MPI_Recv(&(*grid)[i * localSize * COLS], localSize * COLS, MPI_FLOAT, i, 12, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
     }
   } else if (noProcesses > 1){
-    MPI_Send(&(*grid)[processId * noLines * COLS], noLines * COLS, MPI_FLOAT, 0, 12, MPI_COMM_WORLD);
+    MPI_Send(&(*grid)[processId * localSize * COLS], noLines * COLS, MPI_FLOAT, 0, 12, MPI_COMM_WORLD);
   }
 }
 
